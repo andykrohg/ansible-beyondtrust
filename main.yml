@@ -1,0 +1,7 @@
+- hosts: all
+  become: yes
+  become_method: pbrun
+  # become_exe: pbrun (use full path here, if needed)
+  tasks:
+  - name: Who am I?
+    shell: id
